@@ -1,0 +1,90 @@
+==================================================
+LAPORAN PENGUJIAN SKALABILITAS - 15 USER
+==================================================
+
+--- [BAGIAN 1] HASIL PING (LATENCY) ---
+Command: ping -i 1 -c 30 <ip_dest>
+
+PING 192.168.20.15 (192.168.20.15) 56(84) bytes of data.
+64 bytes from 192.168.20.15: icmp_seq=1 ttl=64 time=16.9 ms
+64 bytes from 192.168.20.15: icmp_seq=2 ttl=64 time=8.20 ms
+64 bytes from 192.168.20.15: icmp_seq=3 ttl=64 time=7.59 ms
+64 bytes from 192.168.20.15: icmp_seq=4 ttl=64 time=7.70 ms
+64 bytes from 192.168.20.15: icmp_seq=5 ttl=64 time=7.67 ms
+64 bytes from 192.168.20.15: icmp_seq=6 ttl=64 time=7.87 ms
+64 bytes from 192.168.20.15: icmp_seq=7 ttl=64 time=8.30 ms
+64 bytes from 192.168.20.15: icmp_seq=8 ttl=64 time=8.09 ms
+64 bytes from 192.168.20.15: icmp_seq=9 ttl=64 time=7.70 ms
+64 bytes from 192.168.20.15: icmp_seq=10 ttl=64 time=8.75 ms
+64 bytes from 192.168.20.15: icmp_seq=11 ttl=64 time=7.43 ms
+64 bytes from 192.168.20.15: icmp_seq=12 ttl=64 time=7.97 ms
+64 bytes from 192.168.20.15: icmp_seq=13 ttl=64 time=8.04 ms
+64 bytes from 192.168.20.15: icmp_seq=14 ttl=64 time=8.40 ms
+64 bytes from 192.168.20.15: icmp_seq=15 ttl=64 time=8.20 ms
+64 bytes from 192.168.20.15: icmp_seq=16 ttl=64 time=7.75 ms
+64 bytes from 192.168.20.15: icmp_seq=17 ttl=64 time=8.05 ms
+64 bytes from 192.168.20.15: icmp_seq=18 ttl=64 time=8.37 ms
+64 bytes from 192.168.20.15: icmp_seq=19 ttl=64 time=8.10 ms
+64 bytes from 192.168.20.15: icmp_seq=20 ttl=64 time=8.01 ms
+64 bytes from 192.168.20.15: icmp_seq=21 ttl=64 time=7.60 ms
+64 bytes from 192.168.20.15: icmp_seq=22 ttl=64 time=9.33 ms
+64 bytes from 192.168.20.15: icmp_seq=23 ttl=64 time=8.04 ms
+64 bytes from 192.168.20.15: icmp_seq=24 ttl=64 time=8.10 ms
+64 bytes from 192.168.20.15: icmp_seq=25 ttl=64 time=7.70 ms
+64 bytes from 192.168.20.15: icmp_seq=26 ttl=64 time=7.68 ms
+64 bytes from 192.168.20.15: icmp_seq=27 ttl=64 time=8.07 ms
+64 bytes from 192.168.20.15: icmp_seq=28 ttl=64 time=7.89 ms
+64 bytes from 192.168.20.15: icmp_seq=29 ttl=64 time=7.67 ms
+64 bytes from 192.168.20.15: icmp_seq=30 ttl=64 time=8.01 ms
+
+--- 192.168.20.15 ping statistics ---
+30 packets transmitted, 30 received, 0% packet loss, time 29050ms
+rtt min/avg/max/mdev = 7.434/8.304/16.879/1.635 ms
+
+
+--- [BAGIAN 2] HASIL IPERF (JITTER & THROUGHPUT) ---
+Command: iperf -c <ip_dest> -u -b 2M -t 30 -i 1
+
+------------------------------------------------------------
+Client connecting to 192.168.20.15, UDP port 5001
+Sending 1470 byte datagrams, IPG target: 5607.60 us (kalman adjust)
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.20.1 port 51797 connected with 192.168.20.15 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0- 1.0 sec   258 KBytes  2.12 Mbits/sec
+[  3]  1.0- 2.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  2.0- 3.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  3.0- 4.0 sec   257 KBytes  2.11 Mbits/sec
+[  3]  4.0- 5.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  5.0- 6.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  6.0- 7.0 sec   257 KBytes  2.11 Mbits/sec
+[  3]  7.0- 8.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  8.0- 9.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  9.0-10.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 10.0-11.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 11.0-12.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 12.0-13.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 13.0-14.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 14.0-15.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 15.0-16.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 16.0-17.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 17.0-18.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 18.0-19.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 19.0-20.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 20.0-21.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 21.0-22.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 22.0-23.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 23.0-24.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 24.0-25.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 25.0-26.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 26.0-27.0 sec   256 KBytes  2.09 Mbits/sec
+[  3] 27.0-28.0 sec   257 KBytes  2.11 Mbits/sec
+[  3] 28.0-29.0 sec   256 KBytes  2.09 Mbits/sec
+[  3]  0.0-30.0 sec  7.50 MBytes  2.10 Mbits/sec
+[  3] Sent 5350 datagrams
+[  3] Server Report:
+[  3]  0.0-30.0 sec  7.50 MBytes  2.10 Mbits/sec   0.171 ms    0/ 5350 (0%)
+
+
+==================================================

@@ -1,0 +1,2 @@
+Source,Destination,Packet Loss,Status,Keterangan
+Staff (VLAN 10),Visitor (VLAN 20),100%,AMAN (BLOCKED),Isolasi VLAN Berhasil jika 100% Loss
