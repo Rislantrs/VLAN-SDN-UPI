@@ -1,0 +1,114 @@
+==================================================
+LAPORAN PENGUJIAN (MIRIP PAPER) - 50 USER
+Kabel: 100 Mbps | Delay: 5ms | Iperf Load: 50 Mbps
+==================================================
+
+--- [BAGIAN 1] HASIL PING (LATENCY) ---
+PING 192.168.20.50 (192.168.20.50) 56(84) bytes of data.
+64 bytes from 192.168.20.50: icmp_seq=1 ttl=64 time=120 ms
+64 bytes from 192.168.20.50: icmp_seq=2 ttl=64 time=38.1 ms
+64 bytes from 192.168.20.50: icmp_seq=3 ttl=64 time=28.0 ms
+64 bytes from 192.168.20.50: icmp_seq=4 ttl=64 time=26.4 ms
+64 bytes from 192.168.20.50: icmp_seq=5 ttl=64 time=27.5 ms
+64 bytes from 192.168.20.50: icmp_seq=6 ttl=64 time=32.3 ms
+64 bytes from 192.168.20.50: icmp_seq=7 ttl=64 time=30.6 ms
+64 bytes from 192.168.20.50: icmp_seq=8 ttl=64 time=28.7 ms
+64 bytes from 192.168.20.50: icmp_seq=9 ttl=64 time=29.2 ms
+64 bytes from 192.168.20.50: icmp_seq=10 ttl=64 time=28.5 ms
+64 bytes from 192.168.20.50: icmp_seq=11 ttl=64 time=29.0 ms
+64 bytes from 192.168.20.50: icmp_seq=12 ttl=64 time=31.3 ms
+64 bytes from 192.168.20.50: icmp_seq=13 ttl=64 time=27.1 ms
+64 bytes from 192.168.20.50: icmp_seq=14 ttl=64 time=31.0 ms
+64 bytes from 192.168.20.50: icmp_seq=15 ttl=64 time=28.0 ms
+64 bytes from 192.168.20.50: icmp_seq=16 ttl=64 time=29.4 ms
+64 bytes from 192.168.20.50: icmp_seq=17 ttl=64 time=28.9 ms
+64 bytes from 192.168.20.50: icmp_seq=18 ttl=64 time=25.7 ms
+64 bytes from 192.168.20.50: icmp_seq=19 ttl=64 time=28.2 ms
+64 bytes from 192.168.20.50: icmp_seq=20 ttl=64 time=32.2 ms
+64 bytes from 192.168.20.50: icmp_seq=21 ttl=64 time=27.5 ms
+64 bytes from 192.168.20.50: icmp_seq=22 ttl=64 time=28.5 ms
+64 bytes from 192.168.20.50: icmp_seq=23 ttl=64 time=27.1 ms
+64 bytes from 192.168.20.50: icmp_seq=24 ttl=64 time=26.7 ms
+64 bytes from 192.168.20.50: icmp_seq=25 ttl=64 time=26.1 ms
+64 bytes from 192.168.20.50: icmp_seq=26 ttl=64 time=28.3 ms
+64 bytes from 192.168.20.50: icmp_seq=27 ttl=64 time=27.8 ms
+64 bytes from 192.168.20.50: icmp_seq=28 ttl=64 time=30.8 ms
+64 bytes from 192.168.20.50: icmp_seq=29 ttl=64 time=31.1 ms
+64 bytes from 192.168.20.50: icmp_seq=30 ttl=64 time=30.3 ms
+
+--- 192.168.20.50 ping statistics ---
+30 packets transmitted, 30 received, 0% packet loss, time 29052ms
+rtt min/avg/max/mdev = 25.727/32.139/119.669/16.428 ms
+
+
+--- [BAGIAN 2] HASIL IPERF (SERVER REPORT) ---
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.20.50 port 5001 connected with 192.168.20.1 port 51163
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0- 1.0 sec  1.26 MBytes  10.5 Mbits/sec   1.131 ms    0/  897 (0%)
+[  3] 0.0000-1.0000 sec  1 datagrams received out-of-order
+[  3]  1.0- 2.0 sec  1.26 MBytes  10.6 Mbits/sec   0.940 ms 2163/ 3062 (71%)
+[  3] 1.0000-2.0000 sec  5 datagrams received out-of-order
+[  3]  2.0- 3.0 sec  1.25 MBytes  10.5 Mbits/sec   1.487 ms 3561/ 4456 (80%)
+[  3] 2.0000-3.0000 sec  2 datagrams received out-of-order
+[  3]  3.0- 4.0 sec  1.26 MBytes  10.5 Mbits/sec   1.150 ms 3558/ 4455 (80%)
+[  3] 3.0000-4.0000 sec  8 datagrams received out-of-order
+[  3]  4.0- 5.0 sec  1.25 MBytes  10.5 Mbits/sec   1.233 ms 3558/ 4453 (80%)
+[  3] 4.0000-5.0000 sec  3 datagrams received out-of-order
+[  3]  5.0- 6.0 sec  1.26 MBytes  10.5 Mbits/sec   0.958 ms 3558/ 4455 (80%)
+[  3] 5.0000-6.0000 sec  3 datagrams received out-of-order
+[  3]  6.0- 7.0 sec  1.26 MBytes  10.6 Mbits/sec   0.964 ms 3574/ 4473 (80%)
+[  3] 6.0000-7.0000 sec  1 datagrams received out-of-order
+[  3]  7.0- 8.0 sec  1.26 MBytes  10.5 Mbits/sec   1.017 ms 3562/ 4459 (80%)
+[  3] 7.0000-8.0000 sec  3 datagrams received out-of-order
+[  3]  8.0- 9.0 sec  1.25 MBytes  10.5 Mbits/sec   1.030 ms 3552/ 4446 (80%)
+[  3] 8.0000-9.0000 sec  6 datagrams received out-of-order
+[  3]  9.0-10.0 sec  1.26 MBytes  10.5 Mbits/sec   1.448 ms 3563/ 4460 (80%)
+[  3] 9.0000-10.0000 sec  2 datagrams received out-of-order
+[  3] 10.0-11.0 sec  1.26 MBytes  10.6 Mbits/sec   0.634 ms 3569/ 4468 (80%)
+[  3] 10.0000-11.0000 sec  6 datagrams received out-of-order
+[  3] 11.0-12.0 sec  1.26 MBytes  10.5 Mbits/sec   1.245 ms 3564/ 4461 (80%)
+[  3] 12.0-13.0 sec  1.26 MBytes  10.5 Mbits/sec   1.017 ms 3558/ 4454 (80%)
+[  3] 13.0-14.0 sec  1.26 MBytes  10.5 Mbits/sec   1.077 ms 3557/ 4453 (80%)
+[  3] 13.0000-14.0000 sec  1 datagrams received out-of-order
+[  3] 14.0-15.0 sec  1.25 MBytes  10.5 Mbits/sec   1.257 ms 3561/ 4456 (80%)
+[  3] 14.0000-15.0000 sec  1 datagrams received out-of-order
+[  3] 15.0-16.0 sec  1.26 MBytes  10.6 Mbits/sec   1.384 ms 3573/ 4471 (80%)
+[  3] 15.0000-16.0000 sec  5 datagrams received out-of-order
+[  3] 16.0-17.0 sec  1.26 MBytes  10.6 Mbits/sec   1.193 ms 3555/ 4453 (80%)
+[  3] 16.0000-17.0000 sec  7 datagrams received out-of-order
+[  3] 17.0-18.0 sec  1.25 MBytes  10.5 Mbits/sec   1.106 ms 3555/ 4450 (80%)
+[  3] 17.0000-18.0000 sec  5 datagrams received out-of-order
+[  3] 18.0-19.0 sec  1.26 MBytes  10.6 Mbits/sec   1.534 ms 3565/ 4463 (80%)
+[  3] 18.0000-19.0000 sec  2 datagrams received out-of-order
+[  3] 19.0-20.0 sec  1.26 MBytes  10.6 Mbits/sec   0.940 ms 3568/ 4466 (80%)
+[  3] 19.0000-20.0000 sec  8 datagrams received out-of-order
+[  3] 20.0-21.0 sec  1.26 MBytes  10.5 Mbits/sec   0.724 ms 3564/ 4461 (80%)
+[  3] 20.0000-21.0000 sec  2 datagrams received out-of-order
+[  3] 21.0-22.0 sec  1.26 MBytes  10.5 Mbits/sec   1.298 ms 3557/ 4453 (80%)
+[  3] 21.0000-22.0000 sec  13 datagrams received out-of-order
+[  3] 22.0-23.0 sec  1.25 MBytes  10.5 Mbits/sec   1.318 ms 3546/ 4439 (80%)
+[  3] 22.0000-23.0000 sec  13 datagrams received out-of-order
+[  3] 23.0-24.0 sec  1.26 MBytes  10.6 Mbits/sec   0.628 ms 3575/ 4475 (80%)
+[  3] 23.0000-24.0000 sec  7 datagrams received out-of-order
+[  3] 24.0-25.0 sec  1.26 MBytes  10.5 Mbits/sec   1.557 ms 3564/ 4461 (80%)
+[  3] 24.0000-25.0000 sec  5 datagrams received out-of-order
+[  3] 25.0-26.0 sec  1.26 MBytes  10.5 Mbits/sec   1.061 ms 3563/ 4460 (80%)
+[  3] 25.0000-26.0000 sec  4 datagrams received out-of-order
+[  3] 26.0-27.0 sec  1.25 MBytes  10.5 Mbits/sec   1.292 ms 3546/ 4440 (80%)
+[  3] 26.0000-27.0000 sec  9 datagrams received out-of-order
+[  3] 27.0-28.0 sec  1.26 MBytes  10.6 Mbits/sec   0.968 ms 3576/ 4474 (80%)
+[  3] 27.0000-28.0000 sec  10 datagrams received out-of-order
+[  3] 28.0-29.0 sec  1.25 MBytes  10.5 Mbits/sec   1.836 ms 3544/ 4439 (80%)
+[  3] 28.0000-29.0000 sec  8 datagrams received out-of-order
+[  3] 29.0-30.0 sec  1.26 MBytes  10.5 Mbits/sec   1.703 ms 3566/ 4463 (80%)
+[  3] 29.0000-30.0000 sec  13 datagrams received out-of-order
+[  3] 30.0-31.0 sec  1.26 MBytes  10.6 Mbits/sec   1.133 ms 3564/ 4462 (80%)
+[  3]  0.0-31.1 sec  39.1 MBytes  10.5 Mbits/sec   1.539 ms 105840/133740 (79%)
+[  3] 0.0000-31.1135 sec  153 datagrams received out-of-order
+
+==================================================
