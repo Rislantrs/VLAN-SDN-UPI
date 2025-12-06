@@ -143,10 +143,10 @@ Membuat kabel AP Visitor ke Switch jadi lemot (misal 5 Mbps).
 
 ```bash
 # Set jadi 5 Mbps
-py net.linksBetween(ap2, s1)[0].intf1.config(bw=5)
+py net.linksBetween(net.get('ap3'), net.get('s1'))[0].intf1.config(bw=5)
 
 # Kembalikan ke 1000 Mbps (Normal)
-py net.linksBetween(ap2, s1)[0].intf1.config(bw=1000)
+py net.linksBetween(net.get('ap3'), net.get('s1'))[0].intf1.config(bw=1000)
 ```
 
 #### 3\. Simulasi Kabel Rusak (Packet Loss)
@@ -185,10 +185,10 @@ Memutuskan koneksi host secara total.
 
 ```bash
 # Cabut kabel h1
-py h1.intf('h1-eth0').setDown()
+py net.get('ap2').stop()
 
 # Pasang kabel h1
-py h1.intf('h1-eth0').setUp()
+py net.get('ap2').start([net.get('c0')])
 ```
 
 #### 6\. Simulasi User Jalan-jalan (Mobilitas)
