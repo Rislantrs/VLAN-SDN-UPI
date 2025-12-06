@@ -1,0 +1,85 @@
+==================================================
+LAPORAN TCP (REALISTIS/BUSY) - 20 USER
+Kabel: 100Mbps | UDP Target: 50Mbps | No GUI
+==================================================
+
+--- [BAGIAN 1] HASIL PING SEBELUM TCP ---
+PING 192.168.20.20 (192.168.20.20) 56(84) bytes of data.
+64 bytes from 192.168.20.20: icmp_seq=1 ttl=64 time=13.5 ms
+64 bytes from 192.168.20.20: icmp_seq=2 ttl=64 time=5.96 ms
+64 bytes from 192.168.20.20: icmp_seq=3 ttl=64 time=6.28 ms
+64 bytes from 192.168.20.20: icmp_seq=4 ttl=64 time=6.20 ms
+64 bytes from 192.168.20.20: icmp_seq=5 ttl=64 time=7.31 ms
+64 bytes from 192.168.20.20: icmp_seq=6 ttl=64 time=5.69 ms
+64 bytes from 192.168.20.20: icmp_seq=7 ttl=64 time=7.64 ms
+64 bytes from 192.168.20.20: icmp_seq=8 ttl=64 time=6.92 ms
+64 bytes from 192.168.20.20: icmp_seq=9 ttl=64 time=8.08 ms
+64 bytes from 192.168.20.20: icmp_seq=10 ttl=64 time=7.68 ms
+64 bytes from 192.168.20.20: icmp_seq=11 ttl=64 time=5.72 ms
+64 bytes from 192.168.20.20: icmp_seq=12 ttl=64 time=6.44 ms
+64 bytes from 192.168.20.20: icmp_seq=13 ttl=64 time=8.38 ms
+64 bytes from 192.168.20.20: icmp_seq=14 ttl=64 time=4.85 ms
+64 bytes from 192.168.20.20: icmp_seq=15 ttl=64 time=4.60 ms
+64 bytes from 192.168.20.20: icmp_seq=16 ttl=64 time=4.50 ms
+64 bytes from 192.168.20.20: icmp_seq=17 ttl=64 time=5.79 ms
+64 bytes from 192.168.20.20: icmp_seq=18 ttl=64 time=5.94 ms
+64 bytes from 192.168.20.20: icmp_seq=19 ttl=64 time=6.14 ms
+64 bytes from 192.168.20.20: icmp_seq=20 ttl=64 time=6.00 ms
+64 bytes from 192.168.20.20: icmp_seq=21 ttl=64 time=5.65 ms
+64 bytes from 192.168.20.20: icmp_seq=22 ttl=64 time=6.26 ms
+64 bytes from 192.168.20.20: icmp_seq=23 ttl=64 time=4.76 ms
+64 bytes from 192.168.20.20: icmp_seq=24 ttl=64 time=4.70 ms
+64 bytes from 192.168.20.20: icmp_seq=25 ttl=64 time=26.5 ms
+64 bytes from 192.168.20.20: icmp_seq=26 ttl=64 time=6.71 ms
+64 bytes from 192.168.20.20: icmp_seq=27 ttl=64 time=5.88 ms
+64 bytes from 192.168.20.20: icmp_seq=28 ttl=64 time=4.65 ms
+64 bytes from 192.168.20.20: icmp_seq=29 ttl=64 time=5.14 ms
+64 bytes from 192.168.20.20: icmp_seq=30 ttl=64 time=7.30 ms
+
+--- 192.168.20.20 ping statistics ---
+30 packets transmitted, 30 received, 0% packet loss, time 29396ms
+rtt min/avg/max/mdev = 4.504/7.038/26.504/3.986 ms
+
+
+--- [BAGIAN 2] HASIL IPERF TCP (SERVER LOG) ---
+Waiting for server threads to complete. Interrupt again to force quit.
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 85.3 KByte (default)
+------------------------------------------------------------
+[  4] local 192.168.20.20 port 5001 connected with 192.168.20.1 port 42736
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0- 1.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  1.0- 2.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4]  2.0- 3.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  3.0- 4.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  4.0- 5.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  5.0- 6.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  6.0- 7.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4]  7.0- 8.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  8.0- 9.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4]  9.0-10.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 10.0-11.0 sec  1.25 MBytes  10.4 Mbits/sec
+[  4] 11.0-12.0 sec  1.22 MBytes  10.3 Mbits/sec
+[  4] 12.0-13.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 13.0-14.0 sec  1.25 MBytes  10.5 Mbits/sec
+[  4] 14.0-15.0 sec  1.23 MBytes  10.4 Mbits/sec
+[  4] 15.0-16.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 16.0-17.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 17.0-18.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 18.0-19.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 19.0-20.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 20.0-21.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 21.0-22.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 22.0-23.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 23.0-24.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 24.0-25.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 25.0-26.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 26.0-27.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 27.0-28.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 28.0-29.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 29.0-30.0 sec  1.24 MBytes  10.4 Mbits/sec
+[  4] 30.0-31.0 sec  1.23 MBytes  10.3 Mbits/sec
+[  4] 31.0-32.0 sec  1.24 MBytes  10.4 Mbits/sec
+
+==================================================
