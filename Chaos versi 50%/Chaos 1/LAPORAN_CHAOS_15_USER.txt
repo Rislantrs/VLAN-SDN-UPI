@@ -1,0 +1,84 @@
+==================================================
+LAPORAN SUPER REALISTIS (CHAOS) - 15 USER
+Background Load: 50.0% User Aktif
+==================================================
+
+--- [BAGIAN 1] HASIL PING (LATENCY) ---
+PING 192.168.20.15 (192.168.20.15) 56(84) bytes of data.
+64 bytes from 192.168.20.15: icmp_seq=1 ttl=64 time=11.1 ms
+64 bytes from 192.168.20.15: icmp_seq=2 ttl=64 time=6.30 ms
+64 bytes from 192.168.20.15: icmp_seq=3 ttl=64 time=6.42 ms
+64 bytes from 192.168.20.15: icmp_seq=4 ttl=64 time=7.87 ms
+64 bytes from 192.168.20.15: icmp_seq=5 ttl=64 time=5.12 ms
+64 bytes from 192.168.20.15: icmp_seq=6 ttl=64 time=5.27 ms
+64 bytes from 192.168.20.15: icmp_seq=7 ttl=64 time=4.36 ms
+64 bytes from 192.168.20.15: icmp_seq=8 ttl=64 time=5.40 ms
+64 bytes from 192.168.20.15: icmp_seq=9 ttl=64 time=5.90 ms
+64 bytes from 192.168.20.15: icmp_seq=10 ttl=64 time=6.96 ms
+64 bytes from 192.168.20.15: icmp_seq=11 ttl=64 time=4.64 ms
+64 bytes from 192.168.20.15: icmp_seq=12 ttl=64 time=3.93 ms
+64 bytes from 192.168.20.15: icmp_seq=13 ttl=64 time=5.29 ms
+64 bytes from 192.168.20.15: icmp_seq=14 ttl=64 time=5.38 ms
+64 bytes from 192.168.20.15: icmp_seq=15 ttl=64 time=4.67 ms
+64 bytes from 192.168.20.15: icmp_seq=16 ttl=64 time=5.66 ms
+64 bytes from 192.168.20.15: icmp_seq=17 ttl=64 time=4.99 ms
+64 bytes from 192.168.20.15: icmp_seq=18 ttl=64 time=5.66 ms
+64 bytes from 192.168.20.15: icmp_seq=19 ttl=64 time=5.29 ms
+64 bytes from 192.168.20.15: icmp_seq=20 ttl=64 time=5.64 ms
+64 bytes from 192.168.20.15: icmp_seq=21 ttl=64 time=4.64 ms
+64 bytes from 192.168.20.15: icmp_seq=22 ttl=64 time=5.14 ms
+64 bytes from 192.168.20.15: icmp_seq=23 ttl=64 time=5.03 ms
+64 bytes from 192.168.20.15: icmp_seq=24 ttl=64 time=4.34 ms
+64 bytes from 192.168.20.15: icmp_seq=25 ttl=64 time=4.36 ms
+64 bytes from 192.168.20.15: icmp_seq=26 ttl=64 time=5.32 ms
+64 bytes from 192.168.20.15: icmp_seq=27 ttl=64 time=5.18 ms
+64 bytes from 192.168.20.15: icmp_seq=28 ttl=64 time=4.58 ms
+64 bytes from 192.168.20.15: icmp_seq=29 ttl=64 time=5.07 ms
+64 bytes from 192.168.20.15: icmp_seq=30 ttl=64 time=5.82 ms
+
+--- 192.168.20.15 ping statistics ---
+30 packets transmitted, 30 received, 0% packet loss, time 29039ms
+rtt min/avg/max/mdev = 3.934/5.512/11.133/1.315 ms
+
+
+--- [BAGIAN 2] HASIL IPERF (JITTER PER DETIK) ---
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size:  208 KByte (default)
+------------------------------------------------------------
+[  3] local 192.168.20.15 port 5001 connected with 192.168.20.1 port 53852
+[ ID] Interval       Transfer     Bandwidth        Jitter   Lost/Total Datagrams
+[  3]  0.0- 1.0 sec   257 KBytes  2.11 Mbits/sec   0.860 ms    0/  179 (0%)
+[  3]  1.0- 2.0 sec   256 KBytes  2.09 Mbits/sec   0.686 ms    0/  178 (0%)
+[  3]  2.0- 3.0 sec   257 KBytes  2.11 Mbits/sec   0.698 ms    0/  179 (0%)
+[  3]  3.0- 4.0 sec   256 KBytes  2.09 Mbits/sec   0.603 ms    0/  178 (0%)
+[  3]  4.0- 5.0 sec   256 KBytes  2.09 Mbits/sec   0.734 ms    0/  178 (0%)
+[  3]  5.0- 6.0 sec   256 KBytes  2.09 Mbits/sec   1.622 ms    0/  178 (0%)
+[  3]  6.0- 7.0 sec   257 KBytes  2.11 Mbits/sec   1.113 ms    0/  179 (0%)
+[  3]  7.0- 8.0 sec   256 KBytes  2.09 Mbits/sec   0.924 ms    0/  178 (0%)
+[  3]  8.0- 9.0 sec   256 KBytes  2.09 Mbits/sec   1.191 ms    0/  178 (0%)
+[  3]  9.0-10.0 sec   257 KBytes  2.11 Mbits/sec   1.282 ms    0/  179 (0%)
+[  3] 10.0-11.0 sec   256 KBytes  2.09 Mbits/sec   1.394 ms    0/  178 (0%)
+[  3] 11.0-12.0 sec   256 KBytes  2.09 Mbits/sec   0.658 ms    0/  178 (0%)
+[  3] 12.0-13.0 sec   257 KBytes  2.11 Mbits/sec   1.137 ms    0/  179 (0%)
+[  3] 13.0-14.0 sec   256 KBytes  2.09 Mbits/sec   1.286 ms    0/  178 (0%)
+[  3] 14.0-15.0 sec   257 KBytes  2.11 Mbits/sec   0.669 ms    0/  179 (0%)
+[  3] 15.0-16.0 sec   256 KBytes  2.09 Mbits/sec   0.808 ms    0/  178 (0%)
+[  3] 16.0-17.0 sec   256 KBytes  2.09 Mbits/sec   0.795 ms    0/  178 (0%)
+[  3] 17.0-18.0 sec   256 KBytes  2.09 Mbits/sec   0.694 ms    0/  178 (0%)
+[  3] 18.0-19.0 sec   257 KBytes  2.11 Mbits/sec   1.093 ms    0/  179 (0%)
+[  3] 19.0-20.0 sec   256 KBytes  2.09 Mbits/sec   0.864 ms    0/  178 (0%)
+[  3] 20.0-21.0 sec   257 KBytes  2.11 Mbits/sec   0.625 ms    0/  179 (0%)
+[  3] 21.0-22.0 sec   256 KBytes  2.09 Mbits/sec   0.864 ms    0/  178 (0%)
+[  3] 22.0-23.0 sec   256 KBytes  2.09 Mbits/sec   0.859 ms    0/  178 (0%)
+[  3] 23.0-24.0 sec   256 KBytes  2.09 Mbits/sec   0.767 ms    0/  178 (0%)
+[  3] 24.0-25.0 sec   257 KBytes  2.11 Mbits/sec   0.802 ms    0/  179 (0%)
+[  3] 25.0-26.0 sec   256 KBytes  2.09 Mbits/sec   0.922 ms    0/  178 (0%)
+[  3] 26.0-27.0 sec   256 KBytes  2.09 Mbits/sec   0.953 ms    0/  178 (0%)
+[  3] 27.0-28.0 sec   257 KBytes  2.11 Mbits/sec   0.626 ms    0/  179 (0%)
+[  3] 28.0-29.0 sec   256 KBytes  2.09 Mbits/sec   1.233 ms    0/  178 (0%)
+[  3] 29.0-30.0 sec   256 KBytes  2.09 Mbits/sec   0.430 ms    0/  178 (0%)
+[  3]  0.0-30.0 sec  7.50 MBytes  2.10 Mbits/sec   0.430 ms    0/ 5350 (0%)
+
+==================================================
