@@ -67,7 +67,7 @@ Jika laptop Anda menggunakan Bahasa Indonesia, perintah `pingall` akan error (no
 cd /path/to/project/
 
 # Jalankan dengan LC_ALL=C (Memaksa bahasa sistem jadi Inggris sementara)
-sudo LC_ALL=C python3 perpus_hardcore.py
+sudo LC_ALL=C python3 perpus_manual.py
 ```
 
 Tunggu hingga muncul prompt: `mininet-wifi>`. Sekarang Anda siap mengetik perintah manual\!
