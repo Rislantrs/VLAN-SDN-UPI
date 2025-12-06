@@ -23,23 +23,6 @@ Berdasarkan kode `perpus_nlimit.py`, simulasi ini memiliki karakteristik "Realis
 * Fitur `start_noise`: Semua user (kecuali penguji) melakukan **Ping Flood** (interval 0.2 detik) ke jaringan.
 * **Tujuan:** Menciptakan "noise" trafik broadcast/multicast yang tinggi untuk membebani CPU switch dan airtime WiFi.
 
----
-
-## 📊 Hasil Pengujian (Data Rekapitulasi)
-
-Pengujian dilakukan dengan menyuntikkan trafik UDP sebesar **50 Mbps** (Sangat Berat untuk WiFi G) sambil mengukur Latency (Ping) dan Packet Loss.
-
-| Jumlah User | Avg Latency (ms) | Max Latency (ms) | Packet Loss (Iperf) | Jitter (ms) | Out-of-Order |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **5** | [cite_start]4.50 [cite: 5] | [cite_start]9.19 [cite: 3] | [cite_start]79% [cite: 11] | [cite_start]1.14 [cite: 11] | Rendah |
-| **10** | [cite_start]5.05 [cite: 65] | [cite_start]8.64 [cite: 63] | [cite_start]79% [cite: 71] | [cite_start]0.90 [cite: 71] | Rendah |
-| **15** | [cite_start]6.05 [cite: 40] | [cite_start]15.85 [cite: 38] | [cite_start]79% [cite: 46] | [cite_start]0.92 [cite: 46] | Rendah |
-| **20** | [cite_start]6.37 [cite: 16] | [cite_start]13.31 [cite: 14] | [cite_start]79% [cite: 22] | [cite_start]1.06 [cite: 22] | Sedang |
-| **50** | [cite_start]**32.14** [cite: 51] | [cite_start]**119.67** [cite: 49] | [cite_start]79% [cite: 60] | [cite_start]1.54 [cite: 60] | [cite_start]**Tinggi** [cite: 60] |
-| **100** | [cite_start]**35.58** [cite: 27] | [cite_start]**116.17** [cite: 25] | [cite_start]79% [cite: 35] | [cite_start]1.39 [cite: 35] | [cite_start]**Tinggi** [cite: 35] |
-
----
-
 ## 💡 Analisis Mendalam
 
 ### 1. Throughput & Packet Loss (Bottleneck WiFi G)
